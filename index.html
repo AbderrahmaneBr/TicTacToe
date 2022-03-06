@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div class="Container_All">
+
+        <div style="display:inline-flex;align-items: center;">
+            <span id="turnSymbol"></span><span class="turnText">&nbsp;'s Turn.</span>
+        </div>
+
+        <span id="WinnerText">&nbsp;</span>
+        
+        <div class="Board">
+            <div class="Container">
+                <div id="1" onclick="insert(this)"></div>
+                <div id="2" onclick="insert(this)"></div>
+                <div id="3" onclick="insert(this)"></div>
+                <div id="4" onclick="insert(this)"></div>
+                <div id="5" onclick="insert(this)"></div>
+                <div id="6" onclick="insert(this)"></div>
+                <div id="7" onclick="insert(this)"></div>
+                <div id="8" onclick="insert(this)"></div>
+                <div id="9" onclick="insert(this)"></div>
+            </div>
+        </div>
+
+        <button class="Restart" onclick="restart()">Restart</button>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

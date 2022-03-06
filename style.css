@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    background: rgb(126, 255, 195);
+}
+
+.Container_All{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.Board{
+    height: fit-content;
+    width: fit-content;
+}
+
+.Container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+}
+
+.Container div{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    background: white;
+    border: 7px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transform-origin: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+.Container div:hover{
+    transform: scale(1.01);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.Container div:active{
+    transform: scale(0.99);
+}
+
+.Restart{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    background: rgb(129, 0, 60);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Restart:active{
+    background: rgb(139, 2, 66);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+    
+}
+
+.turnText{
+    font-size: 40px;
+    color: black;
+}
+
+#turnSymbol{
+    font-size: 50px;
+}
+
+#WinnerText{
+    text-align: center;
+    font-size: 60px;
+}
